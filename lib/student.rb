@@ -5,13 +5,7 @@ class Student
   @@all = []
 
   def initialize(student_hash)
-    self.name = student_hash[:name]
-    self.twitter = student_hash[:twitter]
-    self.linkedin = student_hash[:linkedin]
-    self.github = student_hash[:github]
-    self.blog = student_hash[:blog]
-    self.profile_quote = student_hash[:profile_quote]
-    self.bio = student_hash[:bio]
+
     self.name = student_hash[:name]
     self.location = student_hash[:location]
     @@all << self
@@ -23,7 +17,13 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
-
+    self.name = student_hash[:name]
+    self.twitter = student_hash[:twitter]
+    self.linkedin = student_hash[:linkedin]
+    self.github = student_hash[:github]
+    self.blog = student_hash[:blog]
+    self.profile_quote = student_hash[:profile_quote]
+    self.bio = student_hash[:bio]
   end
 
   def self.all
