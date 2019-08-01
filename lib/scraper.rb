@@ -32,7 +32,7 @@ class Scraper
         profile_hash[:github] = url
       elsif url_array[0] == "https://twitter"
         profile_hash[:twitter] = url
-      elsif url_array[1] = "linkedin"
+      elsif url_array[1] == "linkedin"
         profile_hash[:linkedin] = url
       else
         profile_hash[:blog] = url
