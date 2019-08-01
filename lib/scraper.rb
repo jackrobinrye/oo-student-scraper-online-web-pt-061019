@@ -35,7 +35,7 @@ class Scraper
       elsif url_array[1] = "linkedin"
         profile_hash[:linkedin] = url
       else
-        profile_hash[:blog] = url 
+        profile_hash[:blog] = url
       end
     end
     profile_hash[:profile_quote] = profile_page.css('div.profile-quote').text
