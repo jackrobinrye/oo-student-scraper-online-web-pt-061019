@@ -8,6 +8,10 @@ class Student
     self.name = student_hash[:name]
     self.twitter = student_hash[:twitter]
     self.linkedin = student_hash[:linkedin]
+    self.github = student_hash[:github]
+    self.blog = student_hash[:blog]
+    self.profile_quote = student_hash[:profile_quote]
+    self.bio = student_hash[:bio]
   end
 
   def self.create_from_collection(students_array)
