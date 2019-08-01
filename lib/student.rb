@@ -17,13 +17,13 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
-    self.name = student_hash[:name]
-    self.twitter = student_hash[:twitter]
-    self.linkedin = student_hash[:linkedin]
-    self.github = student_hash[:github]
-    self.blog = student_hash[:blog]
-    self.profile_quote = student_hash[:profile_quote]
-    self.bio = student_hash[:bio]
+    self.name = attributes_hash[:name]
+    self.twitter = attributes_hash[:twitter]
+    self.linkedin = attributes_hash[:linkedin]
+    self.github = attributes_hash[:github]
+    self.blog = attributes_hash[:blog]
+    self.profile_quote = attributes_hash[:profile_quote]
+    self.bio = attributes_hash[:bio]
   end
 
   def self.all
