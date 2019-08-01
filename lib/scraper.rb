@@ -30,7 +30,7 @@ class Scraper
       url_array = url.split(".")
       if url_array[0] == "https://github"
         profile_hash[:github] = url
-      elsif url_array[0] == "Https://twitter"
+      elsif url_array[0] == "https://twitter"
         profile_hash[:twitter] = url
       elsif url_array[1] = "linkedin"
         profile_hash[:linkedin] = url
@@ -39,6 +39,7 @@ class Scraper
       end
     end
     profile_hash[:profile_quote] = profile_page.css('div.profile-quote').text
+    profile_hash[:bio] = profile_page.css('div.description-holder p')
     binding.pry
   end
 
