@@ -14,6 +14,7 @@ class Student
     self.bio = student_hash[:bio]
     self.name = student_hash[:name]
     self.location = student_hash[:location]
+    @@all << self
   end
 
   def self.create_from_collection(students_array)
